@@ -36,6 +36,11 @@ você irá alterar a linha "pid_file" que deverá conter "pid_file /var/run/mosq
 Logo após você digita Cntrl+s e starta o serviço normalmente com "suso service mosquitto start".
 Caso queira saber mais vá em https://mosquitto.org/man/mosquitto-conf-5.html 
 
+/////////////////////////////////////Segurança Adafruit/////////////////////////////////////
+A chave e o username serão alterados pois nesse repositório a chave está pública(na internet)
+Então se quiser rodar o código, deverá gerar uma nova chave e alterar "#define AIO_USERNAME" e "#define AIO_KEY" 
+respectivamente
+
 ///////////////////////////////Se divirta meu caro////////////////////////////////////////
 
 ;)
