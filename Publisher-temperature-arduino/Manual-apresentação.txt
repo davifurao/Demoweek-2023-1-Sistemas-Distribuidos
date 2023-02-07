@@ -1,0 +1,42 @@
+/////////////////Bibliotecas de placas/////////////////////////
+Esp 8266 de ESP8266 Community
+
+OBS: Para instalar essa biblioteca você vai Arquivos, preferencias, e no campo
+"URLs do Gerenciador de Placas Adicionais" que inicialmente está em branco
+e cole o link https://arduino-esp8266-com.translate.goog/stable/package_esp8266com_index.json?_x_tr_sch=http&_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc
+Depois disso é só pesquisar no "Gerenciador de Placas" esp8266 por ESP8266 Community
+
+
+///////////////////Bibliotecas para instalar////////////////////////////////
+senses_wifi de Isaranu Janthong
+Adafruit Mqtt Library de Adafruit
+DHT sensor library de Adafruit
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////Local-publisher//////////////////////////////////////////////////
+No arquivo "Local-publisher-dht.ino" os comentários de instalações de outras bibliotecas estão no próprio código
+
+O código é proveniente de um outro repositório meu no link: https://github.com/davifurao/Sistema-distribuido/blob/main/envio%20por%20wifi%20arduino(nodeMCU%201.0)/publisher.ino
+
+O site para visualização dos gráficos é : https://io.adafruit.com/Davifurao/dashboards/dashboard-sistemas-distribuidos
+
+
+
+
+
+///////////////////////////////Observações antes da execução/////////////////////////////
+
+*Não se esqueça de verificar o ssid e senha da rede antes de compilar o codigo no arduino
+
+*Não esqueça de baixar as dependências no pc antes de rodar o publisher ou subscriber
+
+*geralmente no wsl quando se vai rodar o mosquitto com "sudo service mosquitto start" é preciso
+mudar a configuração do mosquitto com: "sudo nano /etc/mosquitto/mosquitto.conf". Depois 
+você irá alterar a linha "pid_file" que deverá conter "pid_file /var/run/mosquitto/mosquitto.pid".
+Logo após você digita Cntrl+s e starta o serviço normalmente com "suso service mosquitto start".
+Caso queira saber mais vá em https://mosquitto.org/man/mosquitto-conf-5.html 
+
+///////////////////////////////Se divirta meu caro////////////////////////////////////////
+
+;)
+
