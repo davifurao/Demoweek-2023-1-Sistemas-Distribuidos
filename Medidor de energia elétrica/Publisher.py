@@ -5,7 +5,7 @@ import random
 BROKER="test.mosquitto.org"
 PORT=1883
 KEEPALIVE=60
-TOPIC="teste"
+TOPIC="sensor_energia"
 inicio_random=0
 fim_random=30
 time_sleep_pub=1
